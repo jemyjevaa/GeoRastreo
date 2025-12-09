@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "FF9995C2-9874-4809-90B3-70865E8C3B0A"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1B50D700-38E4-4FD7-AFD4-0F9BB95629C4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TrukmenAdmin/ui/opciones/Eventos/protocol/EventosServiceProtocol.swift"
+            startingColumnNumber = "24"
+            endingColumnNumber = "37"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "serviceEvents(Authorization:deviceId:type:from:to:success:failure:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

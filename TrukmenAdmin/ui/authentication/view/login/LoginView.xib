@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginView" customModule="TrukmenAdmin" customModuleProvider="target">
+            <connections>
+                <outlet property="LabelIdioma" destination="ino-w6-u07" id="eew-6e-AnU"/>
+                <outlet property="LabelSesion" destination="tmm-Ig-DPH" id="vzh-V4-ZLr"/>
+                <outlet property="btnInicio" destination="6Ns-PT-o8m" id="puI-V3-NDa"/>
+                <outlet property="btnMostrar" destination="Ig0-Wx-S8a" id="Jo1-68-jO0"/>
+                <outlet property="btnchek" destination="wRG-ZS-Kh9" id="MXg-Hc-Gij"/>
+                <outlet property="imgMostrarPass" destination="GMb-kq-XhY" id="ED6-Kh-ElO"/>
+                <outlet property="password" destination="Yib-63-Yrh" id="hAR-Yr-ln1"/>
+                <outlet property="scrollview" destination="SP1-no-z2Y" id="3Hv-8x-khT"/>
+                <outlet property="seleccionIdioma" destination="zqa-EA-Rz5" id="FEL-vR-G3v"/>
+                <outlet property="springPass" destination="pgf-tG-qm5" id="Ch9-Na-weC"/>
+                <outlet property="springUser" destination="RJj-ar-fJg" id="byu-Oh-4eA"/>
+                <outlet property="user_name" destination="mLt-Ng-kgr" id="f7W-v0-b2p"/>
+                <outlet property="versionName" destination="4ZI-Lx-Oi3" id="AFQ-tM-GUa"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondoapp3" id="lln-Zm-YLc">
+                    <rect key="frame" x="-113" y="-10" width="654" height="943"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fondo tablet" translatesAutoresizingMaskIntoConstraints="NO" id="nag-Oy-9PF">
+                    <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <view contentMode="scaleToFill" id="ocj-Kl-7Ql">
+                    <rect key="frame" x="6" y="200" width="400" height="700"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" id="SP1-no-z2Y">
+                            <rect key="frame" x="-9" y="30" width="415" height="670"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" id="RJj-ar-fJg" customClass="SpringView" customModule="Spring">
+                                    <rect key="frame" x="33" y="50" width="347" height="50"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Usuario" textAlignment="natural" minimumFontSize="20" id="mLt-Ng-kgr" customClass="ImageTextField" customModule="ImageTextField">
+                                            <rect key="frame" x="8" y="8" width="331" height="34"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="textColor" red="0.019607843140000001" green="0.070588235289999995" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <textInputTraits key="textInputTraits" returnKeyType="done" textContentType="email"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="fieldImage" value="usuario-mini"/>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                                    <real key="value" value="15"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                                                    <color key="value" red="0.023529411764705882" green="0.10588235294117647" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </textField>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="animation" value="fadeInUp"/>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                            <real key="value" value="0.20000000000000001"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                            <real key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="curve" value="easyIn"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" id="pgf-tG-qm5" customClass="SpringView" customModule="Spring">
+                                    <rect key="frame" x="33" y="120" width="347" height="55"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Contraseña" textAlignment="natural" minimumFontSize="20" id="Yib-63-Yrh" customClass="ImageTextField" customModule="ImageTextField">
+                                            <rect key="frame" x="8" y="9" width="277" height="34"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="textColor" red="0.019607843140000001" green="0.070588235289999995" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES" textContentType="new-password"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="fieldImage" value="pass-mini"/>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                                    <real key="value" value="15"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                                                    <color key="value" red="0.023529411760000001" green="0.1058823529" blue="0.3803921569" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </textField>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ig0-Wx-S8a" customClass="LGButton" customModule="LGButton">
+                                            <rect key="frame" x="293" y="9" width="32" height="35"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ver" id="GMb-kq-XhY">
+                                                    <rect key="frame" x="0.0" y="0.0" width="32" height="35"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                                    <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="btnMostrarPass:" destination="-1" eventType="touchUpInside" id="hjH-Gs-5lY"/>
+                                            </connections>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="Ig0-Wx-S8a" secondAttribute="bottom" constant="11" id="IHZ-mn-or4"/>
+                                        <constraint firstAttribute="trailing" secondItem="Ig0-Wx-S8a" secondAttribute="trailing" constant="22" id="c6m-w2-k7b"/>
+                                        <constraint firstItem="Ig0-Wx-S8a" firstAttribute="top" secondItem="pgf-tG-qm5" secondAttribute="top" constant="9" id="zJ9-KC-QCH"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="animation" value="fadeInUp"/>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                            <real key="value" value="0.40000000000000002"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                            <real key="value" value="1.3"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view hidden="YES" contentMode="scaleToFill" id="cCJ-5b-J1w" customClass="SpringView" customModule="Spring">
+                                    <rect key="frame" x="33" y="190" width="347" height="45"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" id="zqa-EA-Rz5" >
+                                            <rect key="frame" x="8" y="0.0" width="331" height="45"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="translating" translatesAutoresizingMaskIntoConstraints="NO" id="GmN-ok-Wfz">
+                                                    <rect key="frame" x="14" y="6.5" width="30" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seleccionar Idioma" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ino-w6-u07">
+                                                    <rect key="frame" x="52" y="11" width="242" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.019607843140000001" green="0.070588235289999995" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrdwn" translatesAutoresizingMaskIntoConstraints="NO" id="KWX-gT-NUx">
+                                                    <rect key="frame" x="302" y="11.5" width="20" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="20" id="Doq-WV-jmr"/>
+                                                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="20" id="KmY-b2-qne"/>
+                                                        <constraint firstAttribute="width" constant="20" id="M7K-J5-Eeo"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="bC2-sB-TQV"/>
+                                                        <constraint firstAttribute="height" constant="20" id="ffr-rW-HiA"/>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="p3m-hf-0In"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="KWX-gT-NUx" firstAttribute="centerY" secondItem="ino-w6-u07" secondAttribute="centerY" id="3Lj-Ot-zVc"/>
+                                                <constraint firstAttribute="trailing" secondItem="KWX-gT-NUx" secondAttribute="trailing" constant="9" id="GNE-LI-F6Y"/>
+                                            </constraints>
+                                            <connections>
+                                                <action selector="btnIdioma:" destination="-1" eventType="touchUpInside" id="Wex-lJ-zyQ"/>
+                                            </connections>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="animation" value="fadeInUp"/>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                            <real key="value" value="0.59999999999999998"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                            <real key="value" value="1.6000000000000001"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="curve" value="easyIn"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" id="lh9-z5-NYP" customClass="SpringButton" customModule="Spring">
+                                    <rect key="frame" x="33" y="200" width="347" height="45"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wRG-ZS-Kh9" customClass="WOWCheckbox" customModule="WOWCheckbox">
+                                            <rect key="frame" x="10" y="0.0" width="40" height="40"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="isChecked" value="YES"/>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                    <color key="value" red="0.89411764709999997" green="0.57254901960000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="boxBackgroundColor">
+                                                    <color key="value" red="0.89411764709999997" green="0.57254901960000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="tickColor">
+                                                    <color key="value" red="0.14901960784313725" green="0.14901960784313725" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mantener Sesión Iniciada" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tmm-Ig-DPH">
+                                            <rect key="frame" x="58" y="12" width="289" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                                <view contentMode="scaleToFill" id="6Ns-PT-o8m" customClass="LGButton" customModule="LGButton">
+                                    <rect key="frame" x="33" y="300" width="347" height="43"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.019607843140000001" green="0.070588235289999995" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="tintColor" red="0.019607843140000001" green="0.070588235289999995" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                            <color key="value" red="0.89411764709999997" green="0.57254901960000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="titleString" value="Iniciar Sesión"/>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="titleFontSize">
+                                            <real key="value" value="18"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="btnLogin:" destination="-1" eventType="valueChanged" id="bf9-gF-DMh"/>
+                                        <action selector="btnSend:" destination="-1" eventType="touchUpInside" id="GF0-a2-8m2"/>
+                                    </connections>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="V: Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ZI-Lx-Oi3">
+                                    <rect key="frame" x="55" y="400" width="305" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <viewLayoutGuide key="contentLayoutGuide" id="mbk-Cg-Bhw"/>
+                            <viewLayoutGuide key="frameLayoutGuide" id="nSf-2d-PgB"/>
+                        </scrollView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logogeovoycolor" id="gHj-8h-ZJY" customClass="SpringImageView" customModule="Spring">
+                    <rect key="frame" x="66" y="78" width="280" height="150"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <point key="canvasLocation" x="16.40625" y="150.21961932650072"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="6Ns-PT-o8m">
+            <size key="intrinsicContentSize" width="10" height="10"/>
+        </designable>
+        <designable name="Ig0-Wx-S8a">
+            <size key="intrinsicContentSize" width="10" height="10"/>
+        </designable>
+        <designable name="Yib-63-Yrh">
+            <size key="intrinsicContentSize" width="184.5" height="34"/>
+        </designable>
+        <designable name="mLt-Ng-kgr">
+            <size key="intrinsicContentSize" width="150.5" height="35.5"/>
+        </designable>
+        <designable name="zqa-EA-Rz5">
+            <size key="intrinsicContentSize" width="30" height="34"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="arrdwn" width="512" height="512"/>
+        <image name="fondo tablet" width="2048" height="2732"/>
+        <image name="fondoapp3" width="1400" height="2796"/>
+        <image name="logogeovoycolor" width="1080" height="318"/>
+        <image name="pass-mini" width="40" height="40"/>
+        <image name="translating" width="512" height="512"/>
+        <image name="usuario-mini" width="40" height="40"/>
+        <image name="ver" width="512" height="512"/>
+    </resources>
+</document>
